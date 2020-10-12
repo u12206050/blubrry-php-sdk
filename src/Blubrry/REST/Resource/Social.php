@@ -51,10 +51,10 @@ class Social {
                 $body[$item] = $params[$item];
             }
         }
-        
+
         return \Blubrry\REST\API::request($path, 'POST', $body);
     }
-    
+
     /**
      * Get Social Options.
      *
@@ -69,7 +69,7 @@ class Social {
         $path = '/2/social/' . $programKeyword . '/get-social-options.json';
 
         $socialOptions = [
-           'social-options' => [], 
+           'social-options' => [],
         ];
 
         $socialTypes    = ['twitter', 'youtube', 'facebook'];
@@ -105,7 +105,7 @@ class Social {
                         return false;
                     }
                 }
-                
+
                 $currentOption['social-type'] = $type;
                 $currentOption['form-data']   = [];
 
@@ -162,7 +162,7 @@ class Social {
      */
     public function postSocial($programKeyword, $body) {
         $path = '/2/social/' . $programKeyword . '/post.json';
-    
+
         $required = [
             'podcast-id',
             'post-data',
@@ -170,7 +170,7 @@ class Social {
             'social-type',
             'social-data',
         ];
-    
+
         foreach ($required as $item) {
             if (empty($body[$item])) {
                 return false;
@@ -184,14 +184,14 @@ class Social {
             $social = ['content'];
         } else if ('facebook' == $type) {
             $social = [
-                "title-$body['social-id']",
-                "description-$body['social-id']",
-                "destination-$body['social-id']",
+                "title-{$body['social-id']}",
+                "description-{$body['social-id']}",
+                "destination-{$body['social-id']}",
             ];
         } else if ('youtube' == $type) {
             $social = [
-                "title-$body['social-id']",
-                "description-$body['social-id']",
+                "title-{$body['social-id']}",
+                "description-{$body['social-id']}",
             ];
         } else {
             return false;
