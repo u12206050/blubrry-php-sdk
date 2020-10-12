@@ -1,5 +1,5 @@
 {
-    "name": "blubrry/sdk",
+    "name": "day4/blubrry-sdk",
     "type": "library",
     "description": "Client SDK for Blubrry API version 2",
     "keywords": [
