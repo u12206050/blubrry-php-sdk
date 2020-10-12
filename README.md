@@ -2,13 +2,20 @@
 
 The SDK is based on Blubrry API version 2 and you can find the documentation [here](https://create.blubrry.com/resources/blubrry-api/)
 
-# Supported Features
+## Supported Features
 
   - Media Hosting
   - Podcast Statistics
   - Social Medias
 
-# Authenticating Users
+
+## Installation
+
+Blubrry SDK requires [PHP](https://www.php.net/) v7.2+ to run.
+
+`use Blubrry\REST\Api`
+
+### Authenticating Users
 
 The Blubrry API has OAuth2.0 authentication system.
 
@@ -49,7 +56,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API();
 
@@ -85,7 +91,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API();
 
@@ -116,7 +121,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -151,7 +155,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -181,7 +184,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -210,7 +212,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -239,7 +240,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -270,7 +270,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -303,7 +302,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -335,7 +333,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -364,7 +361,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -416,7 +412,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -468,7 +463,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -539,7 +533,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -627,7 +620,6 @@ Example request:
 
 ``` php
 <?php
-require_once 'Blubrry/autoload.php';
 
 $api = new \Blubrry\REST\API($accessToken);
 
@@ -652,10 +644,6 @@ Example response:
 {}
 ```
 
-### Installation
-
-Blubrry SDK requires [PHP](https://www.php.net/) v7.2+ to run.
-
-Clone the repository and make sure you import the file `Blubrry/autoload.php`
+## LICENSE
 
 This SDK is open source with a [public repository](github.com/lucashillebrandt/blubrry-php-sdk) on GitHub.
